@@ -1,98 +1,116 @@
-/* Reset some default styles */
-* {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #181818; /* Dark background */
-    color: #f6c1d7; /* Light pinkish color */
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #f5a5b1; /* Light pink */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #f5f5f5;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 0;
+    background-color: #222;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #f5f5f5;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3); /* Shadowbox effect on hover */
+}
+
+.project-content {
+    width: 50%;
+}
+
+.project-content h3 {
+    font-size: 2em;
+    color: #f5a5b1;
+}
+
+.project-content p {
+    font-size: 1.1em;
     line-height: 1.6;
-  }
-  
-  h1, h2, h3 {
-    color: #f6c1d7; /* Light pink color */
-  }
-  
-  header {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #f6c1d7;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: #ffb3cc; /* Slightly lighter pink on hover */
-  }
-  
-  section {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .project {
-    margin: 20px 0;
-  }
-  
-  .project .button {
-    display: inline-block;
-    background-color: #f6c1d7;
-    color: #111;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-  
-  .project .button:hover {
-    background-color: #ffb3cc; /* Lighter pink on hover */
-  }
-  
-  footer {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-    color: #f6c1d7;
-  }
-  
-  footer p {
-    font-size: 0.9rem;
-  }
-  
-  /* Styling for images */
-  .about-img {
-    max-width: 100%;
+    color: #f5f5f5;
+}
+
+.project-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 400px; /* Control the image size */
     height: auto;
-    border-radius: 10px;
+}
+
+/* View Site Button */
+.view-site-btn {
+    display: inline-block;
     margin-top: 20px;
-  }
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    nav ul li {
-      display: block;
-      margin: 10px 0;
-    }
-  }
-  
+    padding: 10px 20px;
+    background-color: #f5a5b1;
+    color: #333;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-site-btn:hover {
+    background-color: #f58a8a; /* Darker pink on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+footer a {
+    color: #f5a5b1;
+    text-decoration: none;
+}

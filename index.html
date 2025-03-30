@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Aidan Bigus">
-  <meta name="description" content="Portfolio of Aidan Bigus. Check out my awesome projects!">
-  <meta name="keywords" content="Aidan Bigus, portfolio, web development, projects, coding, design">
-  <meta name="robots" content="index, follow">
-  <title>Portfolio | Aidan Bigus</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Aidan Bigus</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Aidan Bigus Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Aidan, a passionate web developer with a focus on minimalistic design and clean code. Welcome to my portfolio website!</p>
-      <img src="images/Screenshot%202025-03-30%20042127.png" alt="Screenshot of my portfolio" class="about-img">
-    </section>
+    <header>
+        <div class="container">
+            <h1>Aidan Bigus</h1>
+            <p>Welcome to my portfolio! Check out my projects below.</p>
+        </div>
+    </header>
 
     <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>No need to click the button below, you're already on my portfolio website! But hey, if you want to check the code, here's the GitHub repo:</p>
-        <a href="https://github.com/kookiifolf/portfolio-website" target="_blank" class="button">View GitHub Repo</a>
-      </div>
-      <!-- Add more projects as needed -->
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>This is the site you're currently browsing. No need to click the "View Site" button. You're already on it!</p>
+                    <a href="https://aidanbigus.netlify.app" target="_blank" class="view-site-btn">View Site</a>
+                </div>
+                <div class="project-image">
+                    <img src="images/Screenshot%202025-03-30%20042127.png" alt="Screenshot of my portfolio" class="about-img">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Feel free to reach out to me via email or phone for any inquiries:</p>
-      <ul>
-        <li>Email: <a href="mailto:kookiethefolf@gmail.com">kookiethefolf@gmail.com</a></li>
-        <li>Phone: <a href="tel:+14172416580">+1 (417) 241-6580</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>Designed and developed by Aidan Bigus &copy; 2025</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>Contact: <a href="mailto:kookiethefolf@gmail.com">kookiethefolf@gmail.com</a> | Phone: +1(417)-241-6580</p>
+        </div>
+    </footer>
 </body>
 </html>
