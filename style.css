@@ -1,32 +1,178 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-h1 {
-    margin: 0;
-}
-
-main {
-    padding: 20px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1, h2 {
     margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar .nav-links a {
+    margin: 0 15px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #1e90ff;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #1e90ff;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0077cc;
+}
+
+/* Projects Section */
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card a {
+    color: #1e90ff;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* Dark/Light Mode */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background-color: #222;
+}
+
+body.dark-mode .cta-button {
+    background-color: #ff7f50;
+}
+
+body.dark-mode .cta-button:hover {
+    background-color: #ff6347;
+}
+
+body.dark-mode .card {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode .card a {
+    color: #ff7f50;
 }
 
 footer {
     background-color: #333;
     color: white;
+    padding: 20px;
+}
+
+footer p {
     text-align: center;
-    padding: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
 }
