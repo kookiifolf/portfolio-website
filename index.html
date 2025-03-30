@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidan's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aidan Bigus Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>Aidan's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section id="home" class="hero">
+    <div class="content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm Aidan Bigus, a passionate developer.</p>
+    </div>
+  </section>
 
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>Hi, I'm Aidan. I’m a web developer and an enthusiast of all things coding.</p>
-    </section>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm a developer with experience in various fields, from web design to machine learning. I strive to create minimalistic yet impactful projects that showcase my abilities.</p>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <div class="project-image">
-                <!-- Image of your project -->
-                <img src="images/Screenshot_2025-03-30_042127.png" alt="Portfolio Website Screenshot">
-            </div>
-            <div class="project-info">
-                <h3><a href="https://github.com/kookiifolf/portfolio-website" target="_blank">Portfolio Website</a></h3>
-                <p>This is my personal portfolio website. It showcases my skills, projects, and experience. The source code is available on GitHub, and the live site is hosted on Netlify.</p>
-                <a href="https://aidanbigus.netlify.app" class="button" target="_blank">View Live Website</a>
-            </div>
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project">
+        <img src="images/Screenshot_2025-03-30_042127.png" alt="Portfolio Screenshot">
+        <div class="project-details">
+          <h3>Portfolio Website</h3>
+          <p>This is my personal portfolio website showcasing my work and projects. Check it out below!</p>
+          <a href="https://aidanbigus.netlify.app" target="_blank">View Project</a>
         </div>
-    </section>
+      </div>
+      <!-- More projects can be added here -->
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you want to get in touch, feel free to reach out to me via email!</p>
-    </section>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch with me, feel free to email me at <a href="mailto:kookiethefolf@gmail.com">kookiethefolf@gmail.com</a>.</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Aidan Bigus | Portfolio Website</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Aidan Bigus</p>
+  </footer>
 </body>
 </html>
